@@ -1,4 +1,4 @@
-# autorec
+# app
 
 ## Project setup
 ```
