@@ -1,6 +1,6 @@
 <template>
     <div class="absolute
-    -bottom-64
+    top-80
     flex
     flex-col
     bg-white

@@ -51,7 +51,7 @@ export default {
    let mymap;
 
    onMounted(()=>{
-    mymap = L.map('map').setView([37.780720,-122.430360], 100);
+    mymap = L.map('map').setView([37.800083,-122.478274], 17);
 
     L.tileLayer(
       "https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoiYW5pc2hzaGFuIiwiYSI6ImNsYzl1bjhjcjBucWYzcWxobmdpcWo5dG8ifQ.gatWcYMlfAluGXCzLviD3w",
@@ -66,12 +66,12 @@ export default {
   }
 )
 .addTo(mymap);
-/*
+
 var redDot = L.icon({
     iconUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Location_dot_red.svg/1024px-Location_dot_red.svg.png',
     iconSize: [20, 20],
     popupAnchor: [-3, -76],
-});*/
+});
 
 var greenDot = L.icon({
     iconUrl: 'https://upload.wikimedia.org/wikipedia/commons/2/2d/Basic_green_dot.png',
@@ -79,10 +79,21 @@ var greenDot = L.icon({
     popupAnchor: [-3, -76],
 });
 
-var m1 =L.marker([37.780720,-122.430360],{icon: greenDot});
+var a =L.marker([37.801064,-122.477601],{icon: greenDot});
+var b =L.marker([37.800645,-122.477860],{icon: redDot});
+var c =L.marker([37.800083,-122.478274],{icon: redDot});
+var d =L.marker([37.799414,-122.478403],{icon: redDot});
+var e =L.marker([37.798846,-122.478671],{icon: redDot});
 
 
-m1.addTo(mymap);
+
+
+a.addTo(mymap);
+b.addTo(mymap);
+c.addTo(mymap);
+d.addTo(mymap);
+e.addTo(mymap);
+
 
    });
 
