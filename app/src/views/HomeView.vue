@@ -66,14 +66,20 @@ export default {
   }
 )
 .addTo(mymap);
-
+/*
 var redDot = L.icon({
     iconUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Location_dot_red.svg/1024px-Location_dot_red.svg.png',
     iconSize: [20, 20],
     popupAnchor: [-3, -76],
+});*/
+
+var greenDot = L.icon({
+    iconUrl: 'https://upload.wikimedia.org/wikipedia/commons/2/2d/Basic_green_dot.png',
+    iconSize: [20, 20],
+    popupAnchor: [-3, -76],
 });
 
-var m1 =L.marker([37.780720,-122.430360],{icon: redDot});
+var m1 =L.marker([37.780720,-122.430360],{icon: greenDot});
 
 
 m1.addTo(mymap);
